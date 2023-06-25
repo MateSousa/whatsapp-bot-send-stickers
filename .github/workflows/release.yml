@@ -19,7 +19,7 @@ jobs:
         uses: MateSousa/create-release@master
         with:
           repo_owner: MateSousa
-          repo_name: create-release
+          repo_name: whatsapp-bot-send-stickers
           base_branch: test
           target_branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -29,7 +29,7 @@ jobs:
         uses: MateSousa/create-release-bot@master
         with:
           repo_owner: MateSousa
-          repo_name: create-release
+          repo_name: whatsapp-bot-send-stickers
           base_branch: test
           target_branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
