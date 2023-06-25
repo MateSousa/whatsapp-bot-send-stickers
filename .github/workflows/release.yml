@@ -21,7 +21,7 @@ jobs:
       
       - name: Create Release PR
         if: github.event_name == 'push'
-        uses: MateSousa/create-release@main
+        uses: MateSousa/create-release@v0.0.1
         with:
           repo_owner: MateSousa
           repo_name: whatsapp-bot-send-stickers
@@ -31,7 +31,7 @@ jobs:
       
       - name: Bot running
         if: github.event_name == 'pull_request' || github.event_name == 'issue_comment'
-        uses: MateSousa/create-release-bot@main
+        uses: MateSousa/create-release-bot@v0.0.1
         with:
           repo_owner: MateSousa
           repo_name: whatsapp-bot-send-stickers
