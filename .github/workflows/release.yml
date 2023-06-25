@@ -13,10 +13,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      
+    steps:      
       - name: Create Release PR
         if: github.event_name == 'push'
         uses: MateSousa/create-release@master
